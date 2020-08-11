@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="../plugins/nstyles/estilos.css">
+    <script src="../plugins/scripts/validar.js"></script>
+</head>
+<body>
+    <h1>Formulario de registro ACHEDG</h1>
+    <form action="../controller/registrar.php" method="post"
+    class="form-register" onsubmit="return validar();">
+        <h2 class="form_titulo">CREA UNA CUENTA</h2>
+        <div class="contenedor-inputs">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-48" maxlength="50" required>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="input-48" maxlength="50"  required>
+            <input type="text" id="nickname" name="nickname" placeholder="NickName" class="input-100" maxlength="100"  required>
+            <input type="email" id="correo" name="correo" placeholder="Correo" class="input-100" maxlength="100"  required>
+            <input type="text" id="cedula" name="cedula" placeholder="Cedula" class="input-48" maxlength="12" required>
+            <input type="password" id="clave" name="clave" placeholder="Contraseña" class="input-48" maxlength="20" required>
+            <input type="text" id="direccion" name="direccion" placeholder="Direccion" class="input-100" maxlength="100" required>
+            <input type="text" id="telefono" name="telefono" placeholder="Telefono" class="input-100" maxlength="10" required>
+            <input type="text" id="contratonumero" name="contratonumero" placeholder="Contrato Numero" class="input-100" maxlength="30" required>
+            <input type="submit" value="Registrame" class="btn-enviar">
+            <p class="form_link">¿Ya tienes una cuenta? <a href="login.html">Ingresa aqui</a></p>
+            <a href="../../index.html">Inicio</a>
+
+
+
+
+
+        </div>
+        
+
+    </form>
+    
+</body>
+</html>
